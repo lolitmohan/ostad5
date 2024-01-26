@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">`                                                                                                                  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                        <li class="col-3">My Fast 1</li>
+                        <li class="col-3">My Fast 2</li>
+                        <li class="col-3">My Fast 3</li>
+                        <li class="col-3">My Fast 4</li>
+                </div>
+        </div>
+
+        <script>
+                //This is Object
+                var a={
+                        Name:"Lolit Mohan",
+                        Age:"22",
+                        City:"Thakurgaon",
+                        Post:"Dholar-Hat Thakurgaon",
+                        
+                }
+
+                //This is Array
+                var B=['Chattragram', 'Rashiseshi', 'Khulna', 'Borishal', 'Rongpur ', 'Moymonshingho', 'Shilet ', 'Dhaka']
+                document.write(a.Name)
+                document.write(B)
+                
+
+                //This is If else
+                var age=15;
+                var city="Thakurgaon";
+                var post="Dholarhat ";
+                if(age>2 && city=="Thakurgaon"){
+                        document.write('Your are Adult')
+                }
+                else{
+                        document.write("Your are Not Adult ")
+                }
+
+                // If... else if
+                var Marks=80;
+                if(Marks>=80 && Marks<=100){
+                        document.write("A+")
+                }else if(Marks<80 && Marks>=70){
+                        document.write("A")
+                }else if(Marks<70 && Marks>=60){
+                        document.write("A-")
+                }else if(Marks<60 && Marks>=50){
+                        document.write("B")
+                }else if(Marks<50 && Marks>=40){
+                        document.write("C")
+                }else if(Marks<40 && Marks>=33){
+                        document.write("D")
+                }
+                else{
+                        document.write("F")
+                }
+
+                // Switch case statement
+                var marks=20;
+                switch(true){
+                        case(marks>=80 && marks<=100):
+                        document.write("A+")
+                        break;
+
+                        case(marks>=70 && marks<80):document.write("B")
+                        break;
+                        
+
+                        case(marks>=60 && marks<70):document.write("C")
+                        break;
+
+                        case(marks>=50 && marks<60):document.write("D")
+                        break;
+
+
+                        case(marks>=33 && marks>50):document.write("E")
+                        break;
+
+                        default:document.write("Your are Fail");
+                }
+
+                // This is For Loop
+                // var i;
+                // for(i=0;i<10;i+1){
+                //         document.write(i)
+                // }
+
+                
+        </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" id="html" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <h1>This is Counting Application</h1>
+    <div class="container">
+        <div class="row">
+            <p id="devices-info"></p>
+        </div>
+    </div>
+    
+
+    <script>
+    // JavaScript Navigator object : Divies Info;
+        let appCodeName= navigator.appCodeName;
+        let appName= navigator.appName;
+        let cookieEnabled= navigator.cookieEnabled;
+        let appVersion= navigator.appVersion;
+        let userAgent= navigator.userAgent;
+        let onLine= navigator.onLine;
+        let platform= navigator.platform;
+
+        let devicesInfo=document.getElementById('devices-info');
+        devicesInfo.innerHTML=`
+        appCodeName=${appCodeName} <br> 
+        appName=${appName}, <br>
+        cookieEnabled=${cookieEnabled}, <br>
+        appVersion=${appVersion}, <br>
+        userAgent=${userAgent}, <br>
+        onLine=${onLine}, <br>
+        platform=${platform}, <br>
+        `
+
+        //Navigator Geolocation
+        
+    </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-Obj-Date-Navi</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1 id="myId">Hello JavaScript</h1>
+    <button id="btn" width="200px" class="btn" >Submit</button>
+
+    <img id="MyImg" src="https://mir-s3-cdn-cf.behance.net/user/230/1f0e13873532801.602c03c0b6921.jpg" alt="lolit">
+
+    <ul id="MyList">
+        <li>Bangladesh</li>
+    </ul>
+
+
+    <script>
+// JavaScript Dom : Finding 
+     let a=   document.getElementById("myId");
+     let b=   document.getElementsByClassName("myClass");
+     let c=   document.getElementsByTagName('h1')
+     let button=document.getElementById('btn')
+
+    // let d=   document.querySelector();
+// JavaScript Dom : innerHTML Manupulation
+    a.innerText="Lolit";
+    a.innerHTML="<button>Submit</button>";
+// JavaScript Dom :  css class Manupulation
+    a.classList.add("text-success");
+    button.classList.add('btn-primary');
+    button.classList.remove('btn-primary');
+    button.classList.add('btn-success');
+
+// javaScript Dom : Attribute Manupulation
+    let img=document.getElementById('MyImg');
+    img.setAttribute('width',100);
+    img.setAttribute('height',300);
+    img.src="https://mir-s3-cdn-cf.behance.net/a6a07fde27e1a14dcb714b33c80a021a/0be4c433-8895-4268-95a5-6f3049b58f52_rwc_-2x11x1580x276x1580.jpg?h=9f74b2c8f2259104430e90796960c75a"
+
+//JavaScript Dom : Create HTML Element
+    let myList=document.getElementById('MyList')
+    let newItem=document.createElement('li');
+    newItem.innerText="India";
+    myList.appendChild(newItem);
+
+    console.log(newItem);
+    console.log(myList);
+
+    </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

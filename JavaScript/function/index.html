@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>This is function</h1>
+
+   
+
+
+    <script>
+
+        var alu=document.getElementById(alu)
+
+        //This is function
+        function Name(){
+            alert("Hello Function")
+        }
+        // Name();
+
+        //FUNCTION ARGUMENTS
+        function fun1(){
+            document.write("My Name is Lolit Mohan");
+        }
+        // fun1("My Name is fun1");
+
+
+        // Return Function
+        function returnfun(){
+
+            var a=22;
+            var b=20;
+            var sub=a+b;
+            return sub;
+        }
+        returnfun();
+
+        //Object 
+        var Lolit={
+            Name:"Lolit Mohan",
+            Age:"22 Yers",
+            City:"Thakurgaon",
+            Post:"Dholar-Hat Thakurgaon",
+            Father:"Koniram Chandra",
+            Mather:"Alita Rany"
+        }
+        document.write(Lolit.Name)
+
+        // Array
+        var Citys=["Dhaka ","Rongpur ","Rashahi ","Khulna ","Chttrogram"];
+        for(i=0;i<Citys;i++);
+        document.write("<br>"+Citys[i]);
+
+        //Array Concate
+        var array1=["A","B","C"]
+        var array2=["1","2","3"]
+        var array3=["Dhaka","Dhamor","Dham"]
+        var result=array1.concat(array2).concat(array3);
+        var result1=array1+array2+array3;
+        document.write("<br>"+result1)
+        document.write("<br>"+result)
+
+
+        var citye=["Dhaka","Rongpur","Rashahi","Thakurgaon"];
+        document.write("<br>"+citye);
+        for(i=0;i<citye.length;i++)
+        document.write("<br>"+[i]);
+        
+    </script>
+</body>
+</html>

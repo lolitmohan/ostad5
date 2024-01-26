@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-els-if</title>
+</head>
+<body>
+    <h1>This is if else Statement</h1>
+    <script>
+        var Marks=70;
+        if(Marks>=80 && Marks<100)
+        document.write("<br>"+"A+")
+        else if(Marks>=70 && Marks<80)
+        document.write("<br>"+"A-");
+    else if(Marks>=60 && Marks<70)
+    document.write("<br>"+"A");
+else{
+    document.write("<br>"+"F")
+}
+
+//REturn Function
+
+//javaScript Array Form
+var array=Array.from("Lolit Mohan");
+document.write(array);
+
+
+    //Array filter
+    var number=["20","30","10","90"];
+    function check(value){
+        return value>20
+    }
+    document.writeIn(number.filter(check))
+    document.write(getDate());
+
+    document.writeIn("</br>navigator.appCodeName:"+navigator.appCodeName);
+    </script>
+</body>
+</html>

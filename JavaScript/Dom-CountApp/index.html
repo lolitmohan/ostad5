@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <h1>This is Counting Application</h1>
+    <div class="container">
+        <h1 id="countNumber" style="margin-left: 90px;">0</h1>
+        <button onclick="{increment()}" class="btn btn-success">increment(+)</button>
+        <button onclick="{decrement()}" class="btn btn-danger">decrement(-)</button>
+        
+    </div>
+    
+
+    <script>
+        
+        function increment(){
+            let countElement=document.getElementById('countNumber');
+            let currentNumber=parseInt(countElement.innerText);
+            currentNumber=currentNumber+1;
+            countElement.innerText=currentNumber;
+        }
+
+        function decrement(){
+            let countElement=document.getElementById('countNumber');
+            let currentNumber=parseInt(countElement.innerText);
+            currentNumber=currentNumber-1;
+            countElement.innerText=currentNumber;
+        }
+    </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
